@@ -17,19 +17,19 @@ public class BallController : MonoBehaviour {
 	void Update () {
 
 		if (Input.GetKey("up")){
-			rigidbodyBall.AddForce (transform.forward * speed, ForceMode.Force);
+			rigidbodyBall.AddForce (Vector3.forward * speed, ForceMode.Force);
 		}
 
 		if (Input.GetKey("right")){
-			rigidbodyBall.AddForce (transform.right * speed, ForceMode.Force);
+			rigidbodyBall.AddForce (Vector3.right * speed, ForceMode.Force);
 		}
 
 		if (Input.GetKey("left")){
-			rigidbodyBall.AddForce (transform.right * -1.0f * speed, ForceMode.Force);
+			rigidbodyBall.AddForce (Vector3.right * -1.0f * speed, ForceMode.Force);
 		}
 
 		if (Input.GetKey("down")){
-			rigidbodyBall.AddForce (transform.forward * -1.0f * speed, ForceMode.Force);
+			rigidbodyBall.AddForce (Vector3.forward * -1.0f * speed, ForceMode.Force);
 		}
 
 		if (Input.GetButtonDown ("Jump")) {
